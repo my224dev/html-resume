@@ -89,3 +89,13 @@ body {
     text-align: center;
     
 }
+.btn_name-change {
+    background-color: rgb(0, 0, 255, 0.8);
+    color:white;
+    font-size: 20px;
+    width: 150px;
+    outline: inherit;
+    border:none;
+    border-radius: 5px 5px;
+    
+}
