@@ -1,7 +1,7 @@
 
 
 (function(){
-    autoRefresh(36000);
+    autoRefresh(500);
 })();
 
 /** this function refresh the page automaticaly every 5 sec */
@@ -19,3 +19,4 @@ function changeName() {
   (document.querySelector("#full_name")).textContent = newName;
     
 }
+
