@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My canvas figures</title>
+</head>
+<body>
+    <div class="content">
+        <canvas id="my_canvas" height="200" width="500" style="border:2px solid black" >
+        </canvas>
+        <canvas id="my_star_canvas" height="600" width="600" style="border: 2px solid black" >
+        </canvas>
+        <canvas id="my_car" height="600" width="1000" style="border: 2px solid black;" >
+        </canvas>
+    </div>
+    <script>
+        const myCanvas = document.querySelector("#my_canvas");
+        myContext = myCanvas.getContext("2d");
+        myContext.moveTo(0,0);
+        myContext.lineTo(500,200);
+        myContext.stroke();
+
+        myContext.moveTo(500,0);
+        myContext.lineTo(0,200);
+        myContext.stroke();
+
+        myContext.moveTo(250,0);
+        myContext.lineTo(250,200);
+        myContext.stroke();
+
+        myContext.moveTo(0,100);
+        myContext.lineTo(500,100);
+        myContext.stroke();
+
+        myContext.beginPath();
+        myContext.arc(250,100,100, 0, 2*Math.PI);
+        myContext.stroke();
+
+        myContext.font = "50px Arial ";
+        myContext.strokeText("UKRAINE", 250, 100);
+
+        const myStart = document.querySelector("#my_star_canvas");
+        let myStartContext = myStart.getContext("2d");
+        myStartContext.moveTo(300,0);
+        myStartContext.lineTo(0,600);
+        myStartContext.stroke();
+
+        myStartContext.moveTo(300,0);
+        myStartContext.lineTo(600,600);
+        myStartContext.stroke();
+
+        myStartContext.moveTo(0,200);
+        myStartContext.lineTo(600,600);
+        myStartContext.stroke();
+
+        myStartContext.moveTo(0,200);
+        myStartContext.lineTo(600,200);
+        myStartContext.stroke();
+
+        myStartContext.moveTo(0,600);
+        myStartContext.lineTo(600,200);
+        myStartContext.stroke();
+
+        myCar = document.querySelector("#my_car");
+        myCarContext = myCar.getContext("2d");
+
+        myCarContext.moveTo(400,400);
+        myCarContext.lineTo(200,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(400,200);
+        myCarContext.lineTo(200,400);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(400,200);
+        myCarContext.lineTo(600,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(400,400);
+        myCarContext.lineTo(600,400);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(600,200);
+        myCarContext.lineTo(800,400);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(800,200);
+        myCarContext.lineTo(600,400);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(10,200);
+        myCarContext.lineTo(200,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(10,400);
+        myCarContext.lineTo(200,400);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(10,200);
+        myCarContext.lineTo(10,400);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(800,200);
+        myCarContext.lineTo(990,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(800,400);
+        myCarContext.lineTo(990,400);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(990,200);
+        myCarContext.lineTo(990,400);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(300,100);
+        myCarContext.lineTo(200,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(300,100);
+        myCarContext.lineTo(200,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(300,100);
+        myCarContext.lineTo(400,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(300,100);
+        myCarContext.lineTo(200,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(700,100);
+        myCarContext.lineTo(600,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(700,100);
+        myCarContext.lineTo(800,200);
+        myCarContext.stroke();
+
+        myCarContext.moveTo(300,100);
+        myCarContext.lineTo(700,100);
+        myCarContext.stroke();
+
+        myCarContext.beginPath();
+        myCarContext.arc(300,480,100,0, 2*Math.PI);
+        myCarContext.stroke();
+
+        myCarContext.beginPath();
+        myCarContext.arc(700,480,100,0, 2*Math.PI);
+        myCarContext.stroke();
+
+
+    </script>
+</body>
+</html>

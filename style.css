@@ -99,3 +99,9 @@ body {
     border-radius: 5px 5px;
     
 }
+.link_canvas {
+    display: inline-block ;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
