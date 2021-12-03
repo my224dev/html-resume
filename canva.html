@@ -12,7 +12,7 @@
         </canvas>
         <canvas id="my_star_canvas" height="600" width="600" style="border: 2px solid black" >
         </canvas>
-        <canvas id="my_car" height="600" width="1000" style="border: 2px solid black;" >
+        <canvas id="my_car" height="600" width="1000">
         </canvas>
     </div>
     <script>
@@ -149,8 +149,19 @@
         myCarContext.beginPath();
         myCarContext.arc(700,480,100,0, 2*Math.PI);
         myCarContext.stroke();
+        
+        var run = "true";
+        var step = 5;
+        const go = setInterval(function(){
+            if(step <=1300) {
+                step+=1;
+                myCar.style.paddingLeft=`${step}px`;
+            }
+            else {
+               step = 0;
+            }
 
-
+        },0.5);
     </script>
 </body>
 </html>
